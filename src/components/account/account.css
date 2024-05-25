@@ -1,0 +1,80 @@
+.account_topDiv{
+    height: 91vh;
+    padding: 20px 0;
+}
+.account_imgDiv{
+    display: flex;
+    justify-content: center;
+}
+.account_imgDiv img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.account_firstName{
+    padding: 0;
+    padding-right: 10px;
+}
+.account_topDiv input:focus{
+    box-shadow: none;
+}
+
+
+/* ............................channels..................... */
+
+.channels_topDiv{
+    height: 91vh;
+    padding: 20px 70px;
+}
+.channel_createAll{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+}
+.channel_createAll label{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    cursor: pointer;
+}
+.channel_nameInput{
+    width: 300px;
+    height: 36px
+}
+.channel_secondCol{
+    padding-left: 20px;
+}
+.channels_imgDiv{
+    text-align:center
+}
+.channels_imgDiv img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* .............................subscription............... */
+
+.subs_mainDiv{
+    height: 91vh;
+}
+.subError_div{
+    display: flex;
+    height: 74vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media only screen and (max-width:576px) {
+    .channels_topDiv{
+        padding: 20px;
+    }
+    .channel_createAll{
+        padding: 20px 20px 20px 0;
+    }
+    .channel_secondCol{
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,44 @@
+.row {
+  margin: 0;
+}
+.videobar_topDiv {
+  min-height: 91vh;
+  margin-left: 200px;
+  padding: 20px 0;
+}
+.videobar_videoDiv img {
+  border-radius: 10px;
+  object-fit: cover;
+  background: #b8b5b5;
+}
+.videobar_videoInfoDiv {
+  height: 126px;
+  padding: 10px 0;
+}
+.videobar_imageDiv {
+  float: left;
+  height: 100%;
+  margin-right: 10px;
+}
+.videobar_imageDiv img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.videobar_vDesc {
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 940px) {
+  .videobar_topDiv {
+    margin-left: 0;
+  }
+}

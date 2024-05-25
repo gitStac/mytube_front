@@ -1,0 +1,37 @@
+.sign__topDiv {
+    text-align: center;
+    height: 91vh;
+    padding: 50px;
+}
+
+.brand__logo {
+    color: #FB2576;
+}
+
+.sign__title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.sign__topDiv input {
+    width: 250px;
+    font-size: 18px;
+    border: none;
+    border-bottom-style: groove;
+    padding: 10px 0;
+    outline: none;
+    background: transparent;
+}
+
+.sign__topDiv button {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0;
+    padding: 5px 0;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+}

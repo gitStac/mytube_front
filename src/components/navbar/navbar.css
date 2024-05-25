@@ -1,0 +1,70 @@
+.navbar-nav {
+    width: 100%;
+    row-gap: 10px;
+    justify-content: space-around;
+}
+
+.navbar_inputDiv {
+    display: flex;
+    width: 60%;
+}
+
+.navbar_inputDiv form{
+    width: 100%;
+}
+
+.navbar_inputDiv input {
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+.navbar_inputDiv button {
+    width: 10%;
+    border: none;
+    height: inherit;
+    background: none;
+}
+
+.navbar_loginDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav_lightMode {
+    background: none;
+    border: none;
+}
+
+.nav_brandlogo {
+    color: red;
+}
+
+.nav_userlogo {
+    margin-right: 10px;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu{
+    min-width: 140px;
+    padding-left: 16px;
+}
+
+@media only screen and (max-width: 920px) {
+    .navbar_inputDiv {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 992px){
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+}
+}

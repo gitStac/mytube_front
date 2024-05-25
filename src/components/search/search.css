@@ -1,0 +1,97 @@
+/* ................videoSearchBar............... */
+
+.videoSearchBar_topDiv {
+  margin-left: 200px;
+  min-height: 100vh;
+  padding: 20px 20px 30px;
+}
+
+/* .........................filter.................. */
+
+.filter_topDiv {
+  display: flex;
+  column-gap: 30px;
+}
+.filter_topDiv label {
+  margin-right: 5px;
+}
+.filter_topDiv select {
+  border: none;
+  outline: none;
+  border-bottom-style: inset;
+}
+
+/* .......................subSearchBar................ */
+
+.subSearchBar_mainDiv {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+.subSearchBar_videoDiv {
+  padding: 20px 0 0;
+  flex: 2;
+}
+.subSearchBar_videoDiv img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+.subSearchBar_infoDiv {
+  flex: 3;
+}
+.subSearchBar_views span {
+  margin-right: 10px;
+  font-size: 15px;
+}
+.subSearchBar_infoDiv h5,
+.subSearchBar_desc,
+.related_title {
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.subSearchBar_channelInfo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.subSearchBar_desc {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 940px) {
+  .videoSearchBar_topDiv {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .subSearchBar_mainDiv {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .videobar_topDiv {
+    margin-left: 0;
+  }
+  .subSearchBar_videoDiv {
+    padding: 14px 0 7px;
+  }
+  .subSearchBar_infoDiv {
+    padding: 0;
+  }
+  .subSearchBar_desc {
+    display: none;
+  }
+  .subSearchBar_infoDiv h5 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .related_title {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 10px 0;
+  }
+}

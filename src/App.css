@@ -1,0 +1,26 @@
+.themeDark{
+    --total_back: black;
+    --w_color: white;
+    --w_mute: #ffffff9c;
+    --faint_back: #464646fc;
+  }
+  .themeLight{
+    --total_back: white;
+    --w_color: black;
+    --w_mute: rgb(82 75 75 / 91%);
+    --faint_back: rgba(234, 232, 232, 0.851);
+  }
+
+.total_back{
+    background: var(--total_back);
+}
+.w_color{
+    color: var(--w_color);
+}
+.w_mute{
+    color: var(--w_mute);
+}
+.faint_back{
+    background: var(--faint_back);
+}
+

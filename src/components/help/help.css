@@ -1,0 +1,23 @@
+.help_topDiv{
+    padding: 30px;
+}
+.help_box{
+    box-shadow: 0px 0px 4px 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.help_link{
+   color: blue;
+}
+.accordion-button:focus{
+    border: none;
+    box-shadow: none;
+}
+.accordion-button{
+    background-color: #4e5654;
+    color: white;
+}
+.accordion-button:not(.collapsed){
+    background-color: #4e5654;
+    color: white;
+}
