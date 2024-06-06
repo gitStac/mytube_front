@@ -35,7 +35,6 @@ function Videobar() {
     <div className="videobar_topDiv total_back">
       <Loading />
       <div>
-        {console.log(vid)}
         <Row>
           {vid.length > 0 ? (
             vid.map((v) => {
