@@ -55,17 +55,17 @@ export function checkUser() {
     let localToken = localStorage.getItem("token");
     dispatch(setStatus(STATUSES.LOADING));
     if (localToken) {
-        await axios
-      .post(`${process.env.REACT_APP_secret_backEnd}/auth/validate`, {
-        token: localToken,
-      })
-      .then((res) => {
-        dispatch(userSet(res.data));
-        dispatch(setStatus(STATUSES.IDLE));
-      })
-      .catch((error) => {
-        dispatch(setStatus(STATUSES.ERROR));
-      });
+      await axios
+        .post(`${process.env.REACT_APP_secret_backEnd}/auth/validate`, {
+          token: localToken,
+        })
+        .then((res) => {
+          dispatch(userSet(res.data));
+          dispatch(setStatus(STATUSES.IDLE));
+        })
+        .catch((error) => {
+          dispatch(setStatus(STATUSES.ERROR));
+        });
     }
   };
 }
@@ -74,7 +74,9 @@ export function logoutUser() {
   return async function fetchProductsThunk(dispatch, getstate) {
     dispatch(setStatus(STATUSES.LOADING));
     await axios
-      .post(`${process.env.REACT_APP_secret_backEnd}/auth/logout`, null)
+      .post(`${process.env.REACT_APP_secret_backEnd}/auth/logout`, {
+        token: localToken,
+      })
       .then((res) => {
         dispatch(logoutSet());
         dispatch(setStatus(STATUSES.IDLE));
