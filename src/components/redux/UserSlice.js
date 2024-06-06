@@ -72,6 +72,7 @@ export function checkUser() {
 
 export function logoutUser() {
   return async function fetchProductsThunk(dispatch, getstate) {
+    let localToken = localStorage.getItem("token");
     dispatch(setStatus(STATUSES.LOADING));
     await axios
       .post(`${process.env.REACT_APP_secret_backEnd}/auth/logout`, {
@@ -80,6 +81,7 @@ export function logoutUser() {
       .then((res) => {
         dispatch(logoutSet());
         dispatch(setStatus(STATUSES.IDLE));
+        localStorage.removeItem("token");
       })
       .catch((error) => {
         dispatch(setStatus(STATUSES.ERROR));

@@ -21,7 +21,6 @@ function Topbar() {
 
   const logout = () => {
     dispatch(logoutUser());
-    localStorage.removeItem("token");
   };
 
   const toggleTheme = () => {
